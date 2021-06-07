@@ -27,6 +27,10 @@ class TodolistsController < ApplicationController
     redirect_to todolist_path(list.id)
   end 
   
+  def destroy
+    list = List
+  end 
+  
   
   private
   def list_params
